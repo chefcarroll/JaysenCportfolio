@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Mashup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url( ); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        header {
+            background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff5722;
+            border-radius: 5px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1100px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slides */
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        /* Next and previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Paragraph styling */
+        .slideshow-paragraph {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px auto;
+            margin-bottom: 120px; /* Add margin at the bottom */
+            max-width: 800px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Meme Mashup</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="photography.html">Photography</a>
+        <a href="3dart.html">3D Art</a>
+        <a href="glitch.html">Glitch Art</a>
+        <a href="memem.html">Meme Mashup</a>
+        <a href="about.html">About</a>
+        <a href="netart.html">Net Art</a>
+    </nav>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <img class="slides" src="sponegbon running over squidward - Copy.jpg" alt="Meme 1">
+        <img class="slides" src="800px-autopx-scale-to-width-down - Copy.jpg" alt="Meme 2">
+        <img class="slides" src="car - Copy.jpg" alt="Meme 3">
+        <img class="slides" src="Patrick - Copy.jpg" alt="Meme 4">
+        <img class="slides" src="j26h1.jpg" alt="Meme 5">
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Paragraph -->
+    <p class="slideshow-paragraph">
+        This is a collection of my meme mashup and the images selected to create this project. Each one represents a unique blend of humor and creativity.
+    </p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jaysen's Portfolio</p>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="about.html">Contact Me</a>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds (slower)
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
+
+</body>
+</html>

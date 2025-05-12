@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            background-image: url(sjsucampus1.jpg); /* Replace with your image file */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed; /* Fix header at the top */
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure it stays above other elements */
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed; /* Fix navigation bar below the header */
+            top: 80px; /* Adjust based on header height */
+            left: 0;
+            z-index: 999; /* Ensure it stays above other elements */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff5722;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .text-box {
+            position: relative; /* Change to relative to place it above images */
+            top: 250px; /* Adjust to place it below the navigation bar */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            max-width: 800px; /* Increased width */
+            padding: 20px; /* Increased padding for larger size */
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 5px solid blue; /* Outer blue border */
+            box-shadow: 0 0 0 10px yellow; /* Inner yellow border effect */
+            z-index: 998; /* Ensure it stays above other elements */
+        }
+
+        .text-box p {
+            font-weight: bold; /* Make the font bold */
+            font-size: 18px; /* Optional: Increase font size for better readability */
+        }
+
+        .image-container {
+            margin-top: 300px; /* Add margin to account for the text box */
+            margin-bottom: 100px; /* Add margin to separate images from the footer */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Add space between the images */
+        }
+
+        .image-container.bottom {
+            margin-top: 50px; /* Reduce margin to bring it closer to the center images */
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1); /* Grow the image on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add a larger shadow on hover */
+        }
+
+        .image-container a {
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .image-container .center-image {
+            max-width: 400px;
+            height: auto;
+        }
+
+        .image-container .side-image {
+            width: 200px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>About The Artist</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="photography.html">Photography</a>
+        <a href="3dart.html">3D Art</a>
+        <a href="glitch.html">Glitch Art</a>
+        <a href="memem.html">Meme Mashup</a>
+        <a href="about.html">About</a>
+        <a href="netart.html">Net Art</a>
+    </nav>
+
+    <!-- Text Box -->
+    <div class="text-box">
+        <p>My name is Jaysen Carroll, and I'm a student at San Jose State University, working towards my degree while pursuing my passion for digital media, animation, and graphic design. I hold an Associate's degree in Interactive Design with honors, which has fueled my love for blending creativity with technology. I enjoy graphic design because it allows me to communicate visually, solve problems creatively, and continually push my boundaries to create innovative, impactful designs.</p>
+    </div>
+
+    <!-- Centered Image -->
+    <div class="image-container">
+        <a href="https://www.ohlone.edu" target="_blank">
+            <img class="side-image" src="Ohlone_college_logo.jpg" alt="Ohlone College">
+        </a>
+        <img class="center-image" src="grad.jpg" alt="Centered Image">
+        <a href="https://www.sjsu.edu" target="_blank">
+            <img class="side-image" src="sjsu logo.avif" alt="San Jose State University">
+        </a>
+    </div>
+
+    <!-- Additional Image -->
+    <div class="image-container bottom">
+        <a href="https://www.youtube.com/@jskrilla4eva" target="_blank">
+            <img class="side-image" src="youtube-icon-free-vector.jpg" alt="YouTube Channel">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jaysen's Portfolio</p>
+    </footer>
+
+</body>
+</html>

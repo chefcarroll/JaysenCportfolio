@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Mashup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(jellyfish-fields-wi576xe31e63c97y.jpg); /* Set the background image */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-position: center center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        header {
+            background-color: rgba(0, 46, 253, 0.8); /* Semi-transparent header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ff5722;
+            border-radius: 5px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1100px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slides */
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        /* Next and previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Paragraph styling */
+        .slideshow-paragraph {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px auto;
+            margin-bottom: 120px; /* Add margin at the bottom */
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            padding: 15px; /* Add padding inside the rectangle */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .hover-image {
+            width: 80%; /* Adjust the size of the image */
+            max-width: 800px; /* Limit the maximum width */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+
+        .hover-image:hover {
+            transform: scale(1.1); /* Grow the image on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add a larger shadow on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Net Art</h1>
+        <p>My interactive website experiment</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="photography.html">Photography</a>
+        <a href="3dart.html">3D Art</a>
+        <a href="glitch.html">Glitch Art</a>
+        <a href="memem.html">Meme Mashup</a>
+        <a href="about.html">About</a>
+        <a href="netart.html">Net Art</a>
+    </nav>
+
+    <!-- Replace the slideshow with a single clickable image -->
+    <div class="image-container">
+        <a href="https://chefcarroll.github.io/sb-Net-art/index.html" target="_blank">
+            <img class="hover-image" src="800px-autopx-scale-to-width-down - Copy.jpg" alt="Clickable Image">
+        </a>
+    </div>
+
+    <!-- Paragraph -->
+    <p class="slideshow-paragraph">
+    Click this image to dive into the deep sea city of Bikini Bottom and meet it's core sea creatures!
+    </p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jaysen's Portfolio</p>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="about.html">Contact Me</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            background-image: url(minecraft1.avif); /* Replace with your image file */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Make the background move with scrolling */
+        }
+
+        header {
+            background-color: #2eb800;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed; /* Fix header at the top */
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure it stays above other elements */
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed; /* Fix navigation bar below the header */
+            top: 80px; /* Adjust based on header height */
+            left: 0;
+            z-index: 999; /* Ensure it stays above other elements */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #2eb800;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            gap: 20px; /* Add space between items */
+            margin: 120px 20px 20px; /* Add margin to the container */
+            margin-top: 13%;
+            margin-bottom: 10%;
+        }
+
+        .image-item {
+            display: flex;
+            align-items: center; /* Align text box and image vertically */
+            gap: 20px; /* Add space between the text box and the image */
+            width: 100%; /* Ensure the items take up the full width */
+            max-width: 800px; /* Limit the maximum width */
+        }
+
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            padding: 15px; /* Add padding inside the text box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+            flex: 1; /* Allow the text box to take up available space */
+            font-size: 16px;
+            color: #333;
+        }
+
+        .image-item img {
+            width: 50%; /* Adjust the size of the image */
+            max-width: 400px; /* Limit the maximum width */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+
+        .image-item img:hover {
+            transform: scale(1.1); /* Grow the image on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add a larger shadow on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Minecraft</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="photography.html">Photography</a>
+        <a href="3dart.html">3D Art</a>
+        <a href="glitch.html">Glitch Art</a>
+        <a href="memem.html">Meme Mashup</a>
+        <a href="about.html">About</a>
+        <a href="netart.html">Net Art</a>
+    </nav>
+
+    <!-- Image Slots -->
+    <div class="image-container">
+        <div class="image-item">
+            <div class="text-box">
+                <p>My classmates and I were tasked with creating a home in survivial minecraft and surviving a night. Afterwards we then went into creative mode to sculpt out 3D models so that we could later use them as sources for another project.</p>
+            </div>
+            <img src="Screenshot (64) - Copy.png" alt="Image 1">
+        </div>
+        <div class="image-item">
+            <div class="text-box">
+                <p>This is the view of my survival home from below. The image above is what it looks like from the inside.</p>
+            </div>
+            <img src="Screenshot (65).png" alt="Image 2">
+        </div>
+        <div class="image-item">
+            <div class="text-box">
+                <p>These are my sculptures that were created in Minecraft creative mode. I made a few including a diamond sword, a diamong pickaxe, a creeper head, and a 4D creeper head</p>
+            </div>
+            <img src="Screenshot (61).png" alt="Image 3">
+        </div>
+        <div class="image-item">
+            <div class="text-box">
+                <p>Here is the view from the front.</p>
+            </div>
+            <img src="Screenshot (59).png" alt="Image 4">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jaysen's Portfolio</p>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="about.html">Contact Me</a>
+    </footer>
+
+</body>
+</html>
